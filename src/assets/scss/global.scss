@@ -1,0 +1,53 @@
+@import "_vars.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  color: $black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  transition: color .2s ease-in-out;
+}
+
+button {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  color: inherit;
+  background-color: transparent;
+
+  transition: color .25s ease-in-out, background-color .25s ease-in-out, border-color .25s ease-in-out;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
